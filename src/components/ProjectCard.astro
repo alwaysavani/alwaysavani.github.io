@@ -1,0 +1,15 @@
+---
+const { project } = Astro.props;
+---
+<div class="card">
+    <h3>{project.data.title}</h3>
+    <p>{project.data.description}</p>
+    <small>Tech Stack: {project.data.stack}</small>
+    <div class="links">
+        {project.data.repo && <a href={project.data.repo}>GitHub</a>}
+        {project.data.demo && <a href={project.data.demo}>Demo</a>}
+    </div>
+</div>
+<style>
+    /* Add card styling here */
+</style>

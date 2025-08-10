@@ -1,0 +1,51 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+interface Props {
+title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="Avani Chaskar's Portfolio" />
+<meta name="viewport" content="width=device-width" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+<style>
+:root {
+--accent: #2337ff;
+--accent-dark: #000d8a;
+--black: 15, 18, 25;
+--gray: 96, 115, 159;
+--gray-light: 224, 231, 255;
+--gray-dark: 34, 41, 57;
+--white: 255, 255, 255;
+}
+body {
+font-family: system-ui, sans-serif;
+background-color: rgb(var(--white));
+color: rgb(var(--gray-dark));
+margin: 0;
+padding: 0 2rem;
+max-width: 800px;
+margin: auto;
+}
+main {
+padding: 2rem 0;
+}
+</style>
+</head>
+<body>
+<Header />
+<main>
+<slot />
+</main>
+<Footer />
+</body>
+</html>

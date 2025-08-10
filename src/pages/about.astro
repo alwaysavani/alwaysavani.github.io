@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="About Me">
+<section>
+<h2>About Me</h2>
+<p>
+I am a Senior Software Engineer with a passion for building robust backend systems and integrating artificial intelligence into real-world applications. With five years of industry experience, I have a proven track record of designing and deploying complex software solutions.
+</p>
+<h3>Career Journey</h3>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-content">
+<h4>Software Engineer 3, JPMorgan Chase & Co.</h4>
+<p style="color: #888; font-style: italic; margin: 0 0 0.5rem;">Feb 2025 – Present</p>
+<p><em></em></p>
+<p>Working on search automation using AI agents and designed critical solutions for data archival and data masking to meet regulatory requirements.
+<br>Led implementation on email notification service for customers of the platform.
+<br>Designed data sync framework between active databases.
+<br>Tech Stack - Java, Python, Spring Boot, Kubernetes, Prompt Engineering, Elasticsearch, Langchain,
+MLOps, AWS.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-content">
+<h4>Software Engineer 2, Goldman Sachs</h4>
+<p style="color: #888; font-style: italic; margin: 0 0 0.5rem;">Aug 2020 – Jan 2023</p>
+<p><em></em></p>
+<p>
+Promoted from Software Engineer 1 (Analyst) to Software Engineer 2 (Associate).
+<br>Designed and implemented a command line utility to compare changes in IaC configs in GitLab, used by more than 300
+products in critical deployment path. Found a bug related to concurrent API requests in GitLab and filed an issue.
+<br>Migrated projects from legacy SDLC to GitLab CI/CD which involved implementing API endpoints, making concurrent
+API calls to synchronize downstream systems.
+<br>Implemented black box probers for continuous builds to trigger alerts when error threshold is crossed.
+<br>Led hack rooms for quarterly hackathons organized in Developer Experience division based on themes.
+<br> Tech Stack - Java, Dropwizard, Elasticsearch, GitLab, Apache FreeMarker, Prometheus, AWS.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-content">
+<h4>Software Engineer Intern, Goldman Sachs</h4>
+<p style="color: #888; font-style: italic; margin: 0 0 0.5rem;">May 2019 – Jul 2019</p>
+<p><em></em></p>
+<p>Developed a pipeline and dashboard for real-time analysis and effective management of container images.
+<br> Tech Stack - NodeJs, Docker, Kubernetes, Kafka
+</p>
+</div>
+</div>
+</div>
+<h3>Achievements</h3>
+<ul>
+<li>First Position, AWS Game Day</strong> at JPMorgan Chase & Co., Bengaluru.</li>
+<li>First Position, Technical Paper Presentation at JPMorgan Chase & Co., Bengaluru.</li>
+<li>Certified AWS Cloud Practitioner.</li>
+<li>Winner, Philips Code to Care Challenge 2019 (over 7,500 teams).</li>
+<li>Grand Finalist, Smart India Hackathon 2019.</li>
+<li>Runner Up, Witty Hacks 2019.</li>
+</ul>
+<h3>Community</h3>
+<p>
+Always looking forward to opportunities for mentoring and community involvement. I served as an iWE Mentor at Goldman Sachs, guiding students in tech, and have volunteered for the Hour of Code to teach Python to school students. I also led coding club - CodeFoster in my college.
+</p>
+</section>
+</Layout>
+<style>
+h2, h3 {
+color: rgb(var(--black));
+}
+ul {
+list-style-type: disc;
+padding-left: 20px;
+}
+li {
+margin-bottom: 0.5rem;
+}
+.timeline {
+position: relative;
+padding: 1rem 0;
+}
+.timeline::before {
+content: '';
+position: absolute;
+left: 5px;
+top: 0;
+bottom: 0;
+width: 2px;
+background: rgb(var(--gray-light));
+}
+.timeline-item {
+position: relative;
+padding-left: 2rem;
+margin-bottom: 2rem;
+}
+.timeline-item::before {
+content: '';
+position: absolute;
+left: 0;
+top: 5px;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background: rgb(var(--gray-dark));
+}
+.timeline-content h4 {
+margin: 0 0 0.5rem;
+color: rgb(var(--black));
+}
+.timeline-content p {
+margin: 0;
+}
+</style>

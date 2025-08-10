@@ -1,0 +1,25 @@
+---
+const { post } = Astro.props;
+const link = post.data.externalLink || `/blog/${post.slug}`;
+const target = post.data.externalLink ? '_blank' : '_self';
+---
+<div class="card">
+    <a href={link} target={target}>
+        <h3>{post.data.title}</h3>
+        <p>{post.data.description}</p>
+        <small>Category: {post.data.category}</small>
+        {post.data.externalLink && <small> (External Link)</small>}
+    </a>
+</div>
+<style>
+    .card {
+        border: 1px solid #ddd;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
